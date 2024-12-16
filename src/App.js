@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import { ProgressBar } from './components/ProgressBar';
 import { SelectService } from "./components/SelectService";
 import BookingInterface from './components/BookingInterface';
-import {UserInterface} from './components/UserInterface';
-import {WishingInterface} from './components/WishingInterface';
-import {PaymentMode} from './components/PaymentMode';
+import { UserInterface } from './components/UserInterface';
+import { WishingInterface } from './components/WishingInterface';
+import { PaymentMode } from './components/PaymentMode';
 import { DateProvider } from './useContext/DateContext';
 
 function App() {
@@ -60,6 +60,7 @@ function App() {
           {renderStepContent()}
         </div>
         <div className="navigation-buttons">
+        {currentStep !== 5 && (
           <button
             className="btn btn-dark"
             onClick={handlePrevious}
@@ -67,13 +68,16 @@ function App() {
           >
             Previous
           </button>
-          <button
-            className="btn btn-primary"
-            onClick={handleNext}
-            disabled={currentStep === 5}
-          >
-            {currentStep === 4 ? 'Confirm' : 'Next'}
-          </button>
+          )}
+          {currentStep !== 5 && (
+            <button
+              className="btn btn-primary"
+              onClick={handleNext}
+              disabled={currentStep === 5}
+            >
+              {currentStep === 4 ? 'Confirm' : 'Next'}
+            </button>
+          )}
         </div>
       </div>
     </DateProvider>

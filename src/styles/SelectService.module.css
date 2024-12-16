@@ -1,0 +1,76 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+}
+
+.fontsize-1 {
+  font-size: 16px;
+}
+
+.progresscol {
+  width: 20%;
+  height: 45px;
+}
+
+.progress {
+  height: 15px;
+}
+
+.head1 {
+  color: #51A6CA;
+}
+
+.progress-bar {
+  background-color: #51A6CA;
+}
+
+.img-dropdown {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.doctor-select {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* .doctor-select:active{
+  font-weight: bold;
+} */
+
+.doctor-option {
+  text-align: center !important;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.doctor-image {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 0%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.btn-next {
+  background-color: #51A6CA;
+  border-color: #51A6CA;
+}
+
+.selected-image {
+  align-items: center;
+  display: flex;
+  margin-left: 5px;
+}
+
+.txt-btn {
+  font-size: 18px;
+}
+
+

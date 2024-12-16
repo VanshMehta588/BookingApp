@@ -1,0 +1,44 @@
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+  }
+  
+  .progress-step {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .step-label {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .progress-bar-wrapper {
+    height: 15px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    transition: width 0.3s ease;
+  }
+  
+  .progress-bar.active {
+    background-color: #0d6efd;
+  }
+  
+  .progress-bar.inactive {
+    background-color: #e9ecef;
+  }
+  
+  

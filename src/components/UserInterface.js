@@ -12,7 +12,7 @@ export const UserInterface = () => {
                     </div>
                 </div>
                 <div className="row mb-4">
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <label htmlFor="name" className="mb-1 fw-bold">
                             Name
                         </label>
@@ -22,7 +22,7 @@ export const UserInterface = () => {
                             placeholder="Enter full name"
                         />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <label htmlFor="name" className="mb-1 fw-bold">
                             Phone number
                         </label>
@@ -32,7 +32,7 @@ export const UserInterface = () => {
                             placeholder="Add contact number"
                         />
                     </div>
-                    <div className="col-4">
+                    <div className="col-12 col-md-4">
                         <label htmlFor="name" className="mb-1 fw-bold">
                             Email ID
                         </label>
